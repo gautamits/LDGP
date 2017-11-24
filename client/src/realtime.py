@@ -7,7 +7,7 @@ while True:
 	ret,frame=camera.read()
 	r,c=frame.shape[:2]
 	gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-	gradient=ldgp(gray)
+	gradient=calcgrad(gray)
 	#gradient=4*gradient
 	new_frame=np.zeros((r,c*2,3))
 	new_frame[:,0:c,:]=frame

@@ -3,10 +3,10 @@ import numpy as np
 import scipy
 import time
 import socket
-from ldgp import *
+from ldgp import calcgrad
 from ldgp import hist
 
-face_cascade = cv2.CascadeClassifier('database/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')
 camera=cv2.VideoCapture(0)
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print s
@@ -21,7 +21,7 @@ while True:
 	for (x,y,w,h) in faces:
 		face=gray[y: y + h, x: x + w]
         	face=cv2.resize(face,(240,240))
-        	gradient=ldgp(face)
+        	gradient=calcgrad(face)
 		#gradient=4*gradient
 		#gradient=np.array(gradient,dtype='uint8')
         	histogram=hist(gradient)
