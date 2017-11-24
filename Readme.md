@@ -1,4 +1,5 @@
-###server and client are two separate modules###
+### Server and client are two separate modules ###
+
 *1. First of all create dependencies. Go to server directory and run `make dependency` will install all the dependencies*
 
 *2. Now create database. Run `make database` will ask root directory of database usi g GUI. Provide it the directory and database will be created*
@@ -25,22 +26,23 @@
 **database.py**
 	takes root folder of database as argument and saves database in data directory. Make sure that images are in tree format. Looks like this
 - root---->
-		person1---->
-		|	    person1_1.photo
-		|	    person1_2.photo
-		|	    |
-		|	    |
-		|	    |
-		|	    person1_n.photo
-		person2---->
-		|
-		|
-		|
-		|
-		personn---->
-			    |
-			    |
-			    personn_n.photo
+	- person1---->
+		- person1_1.photo
+		- person1_2.photo
+		- 
+		- 
+		- 
+		- person1_n.photo
+	- person2---->
+		- 
+		- 
+		- 
+		- 
+		- |
+	- personn---->
+		- personn_1.photo
+        - personn_2.photo
+        - personn_n.photo
 ![alt text](server/src/feature.png)
 
 
