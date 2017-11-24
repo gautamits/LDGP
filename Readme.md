@@ -1,4 +1,4 @@
-####Server and client are two separate modules
+#### Server and client are two separate modules ####
 **1. First of all create dependencies. Go to server directory and run**
 `make dependency`
 which will install all the dependencies.
