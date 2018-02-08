@@ -43,6 +43,7 @@
 		- personn_1.photo
         - personn_2.photo
         - personn_n.photo
+
 #### Following image shows image and corresponding ldgp feature vector
 ![alt text](server/src/feature.png)
 
